@@ -17,14 +17,14 @@ function createTweet(input) {
         quoteAuthor = "Unknown author";
     }
 
-    var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
+    var tweetText = "Quote of the day - " + quoteText + " ~ " + quoteAuthor;
 
     if (tweetText.length > 140) {
     	getQuote();
 	} else {
 	    var tweet = tweetLink + encodeURIComponent(tweetText);
 	    $('.quote').text(quoteText);
-	    $('.author').text("Author: " + quoteAuthor);
+	    $('.author').text("~ " + quoteAuthor);
 	    $('.tweet').attr('href', tweet);
 	}
 

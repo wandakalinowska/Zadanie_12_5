@@ -1,39 +1,70 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
 
-* {
-  box-sizing: border-box; }
+
+
 
 body {
-  font-family: 'Dosis', sans-serif;
-  margin: 0; 
+  font-family: 'Rajdhani', sans-serif; 
+
+
 }
 
 main {
-  margin: 20px auto;
-  background-color: #55acee;
+  margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
-  height: calc(100vh - 40px);
+  max-width: 1000px;
   text-align: center;
-  color: #fff;
-  padding: 100px; 
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+header {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  color: #747d8c;
+  letter-spacing: 4px;
+  
+
 }
 
 .box {
-  margin-top: 100px; 
+  margin-top: 100px;
+  max-width: 800px;
+}
+
+
+.quote {
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.author{
+  text-align: right;
+  margin-right: 50px;
+  font-size: 120%;
 }
 
 .trigger {
   margin-top: 100px;
   width: 300px;
   height: 50px;
-  border: 2px solid #fff;
-  background-color: #55acee;
-  color: #ffffff;
+  border: 1px solid #747d8c;
+  color: #747d8c;
+  background-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'Dosis', sans-serif;
   font-size: 16px; 
+  transition-duration: 1s;
+}
+
+.trigger:hover {
+  background-color: #747d8c;
+  color: #fff;
 }
 
 .tweet {
@@ -41,10 +72,16 @@ main {
   margin: 30px auto;
   width: 300px;
   height: 50px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 1px solid #747d8c;
+  color: #747d8c;
   text-transform: uppercase;
   line-height: 50px;
   text-decoration: none;
-  font-size: 16px; 
+  font-size: 120%; 
+  transition-duration: 1s;
+}
+
+.tweet:hover {
+  background-color: #747d8c;
+  color: #fff;
 }
