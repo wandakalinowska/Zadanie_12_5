@@ -9,6 +9,6 @@ Wyświetla na ekranie losowo wybrany cytat z możliwością wrzucenia go na Twit
 
 * HTML 5
 * CSS 3
-* Jquery
+* jQuery
 * AJAX
 * API
